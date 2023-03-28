@@ -9,10 +9,12 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>organic-food-config</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
@@ -21,11 +23,14 @@
 			<param-value>/WEB-INF/organic-food-config-servlet.xml</param-value>
 		</init-param>
 	</filter>
+	
 	<filter-mapping>
 		<filter-name>sitemesh</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
 	<session-config>
 		<tracking-mode>COOKIE</tracking-mode>
 	</session-config>
+	
 </web-app>

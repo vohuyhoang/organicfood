@@ -10,8 +10,7 @@
 	http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd">
 
 	<context:component-scan
-		base-package="organicfood">
-	</context:component-scan>
+		base-package="organicfood"></context:component-scan>
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -20,14 +19,18 @@
 	</bean>
 
 	<mvc:annotation-driven />
-	<mvc:resources mapping="/assets/**" location="/assets/" />
+	<mvc:resources mapping="/assets/user/**"
+		location="/assets/user/" />
+	<mvc:resources mapping="/assets/admin/**"
+		location="/assets/admin/" />
+
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver"></property>
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/dimamon_shop"></property>
+			value="jdbc:mysql://localhost:3306/organicfood"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value=""></property>
 	</bean>

@@ -23,10 +23,11 @@
 		</dependency>
 		<!-- mysql-connector-java -->
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.45</version>
+   			<groupId>mysql</groupId>
+   			<artifactId>mysql-connector-java</artifactId>
+   			<version>8.0.25</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
