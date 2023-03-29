@@ -24,6 +24,14 @@
 											id="simpleinput" class="form-control">
 									</div>
 									<div class="form-group mb-6">
+										<label for="example-select">Danh mục</label> <select
+											class="form-control" id="example-select">
+											<c:forEach var="item" items="${ categorys }">
+												<option>${ item.name }</option>
+											</c:forEach>
+										</select>
+									</div>
+									<div class="form-group mb-6">
 										<label for="example-textarea">Mô tả</label>
 										<textarea class="form-control" id="example-textarea" rows="4"></textarea>
 									</div>

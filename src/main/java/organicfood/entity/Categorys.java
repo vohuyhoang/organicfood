@@ -1,12 +1,12 @@
-package organicfood.dto;
+package organicfood.entity;
 
-public class ProductDTO {
+public class Categorys {
+
 	private String id;
 	private String name;
-	private Float price;
 	private String description;
 
-	public ProductDTO() {
+	public Categorys() {
 		super();
 	}
 
@@ -26,14 +26,6 @@ public class ProductDTO {
 		this.name = name;
 	}
 
-	public Float getPrice() {
-		return price;
-	}
-
-	public void setPrice(Float price) {
-		this.price = price;
-	}
-
 	public String getDescription() {
 		return description;
 	}
@@ -41,4 +33,5 @@ public class ProductDTO {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 }
