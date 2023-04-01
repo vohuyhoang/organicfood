@@ -17,5 +17,8 @@ public class CategorysDAO extends BaseDAO{
 		String sql = "SELECT * FROM categorys";
 		list = _jdbcTemplate.query(sql, new CategorysMapper());
 		return list;
-	} 
+	}
+	
+	
+	
 }
