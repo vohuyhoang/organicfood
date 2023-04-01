@@ -8,17 +8,23 @@ import org.springframework.stereotype.Repository;
 import organicfood.entity.Categorys;
 import organicfood.entity.CategorysMapper;
 
-
 @Repository
-public class CategorysDAO extends BaseDAO{
-	
-	public List<Categorys> GetDataCategorys(){
+public class CategorysDAO extends BaseDAO {
+
+	public List<Categorys> GetDataCategorys() {
 		List<Categorys> list = new ArrayList<Categorys>();
 		String sql = "SELECT * FROM categorys";
 		list = _jdbcTemplate.query(sql, new CategorysMapper());
 		return list;
 	}
-	
-	
-	
+
+	public boolean saveCategory(Categorys categorys) {
+
+		String sql = "INSERT INTO categorys (id, name, description)" + " VALUES (?, ?, ?)";
+
+		int rowsInserted = _jdbcTemplate.update(sql, categorys.getId(), categorys.getName(),
+				categorys.getDescription());
+		return rowsInserted > 0;
+
+	}
 }
