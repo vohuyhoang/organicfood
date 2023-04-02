@@ -6,8 +6,8 @@ import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +20,7 @@ import organicfood.dto.ProductsDTO;
 import organicfood.service.admin.ProductServiceImpl;
 
 @Controller
-public class ProductAdminController extends BaseController{
+public class ProductAdminController extends BaseController {
 
 	public static int getFlagValue(String flag) {
 		return (flag != null && flag.equals("on")) ? 1 : 0;

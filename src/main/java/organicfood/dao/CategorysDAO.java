@@ -21,9 +21,7 @@ public class CategorysDAO extends BaseDAO {
 	public boolean saveCategory(Categorys categorys) {
 
 		String sql = "INSERT INTO categorys (id, name, description)" + " VALUES (?, ?, ?)";
-
-		int rowsInserted = _jdbcTemplate.update(sql, categorys.getId(), categorys.getName(),
-				categorys.getDescription());
+		int rowsInserted = _jdbcTemplate.update(sql, categorys.getId(), categorys.getName(), categorys.getDescription());
 		return rowsInserted > 0;
 
 	}

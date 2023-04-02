@@ -33,6 +33,8 @@ public class CategoryAdminController extends BaseController {
 
 		String name = request.getParameter("name");
 		String description = request.getParameter("description");
+		
+		System.out.println(name);
 
 		Categorys categorys = new Categorys();
 		categorys.setId(generateKey());
