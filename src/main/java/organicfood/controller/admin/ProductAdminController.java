@@ -46,11 +46,11 @@ public class ProductAdminController extends BaseController {
 
 	@RequestMapping(value = "/admin/add-product", method = RequestMethod.POST)
 	public String AddProduct(HttpServletRequest request) throws IOException, ServletException {
-
+		
+		request.setCharacterEncoding("UTF-8");
 		MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
-
-		String name = request.getParameter("name");
-		String description = request.getParameter("description");
+		String name = new String(request.getParameter("name").getBytes("ISO-8859-1"), "UTF-8");
+		String description = new String(request.getParameter("description").getBytes("ISO-8859-1"), "UTF-8");
 		float price = Float.parseFloat(request.getParameter("price"));
 		String id_category = request.getParameter("id_category");
 		MultipartFile file = multipartRequest.getFile("image");
@@ -61,17 +61,13 @@ public class ProductAdminController extends BaseController {
 		String newProduct = request.getParameter("new_product");
 		int newProductFlag = getFlagValue(newProduct);
 
-		System.out.println(sale);
-		System.out.println(highlight);
-		System.out.println(newProduct);
-
 		String fileName = file.getOriginalFilename();
 		String filePath = "C:/Users/huyho/eclipse-workspace/organicfood/src/main/webapp/assets/img_upload/" + fileName;
 		File dest = new File(filePath);
 		file.transferTo(dest);
 
 		ProductsDTO productsDTO = new ProductsDTO();
-		productsDTO.setId_product(generateKey());
+		productsDTO.setId_product(generateProductId(name));
 		productsDTO.setName(name);
 		productsDTO.setPrice(price);
 		productsDTO.setDescription(description);

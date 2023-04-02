@@ -9,7 +9,7 @@ import organicfood.controller.BaseController;
 import organicfood.service.user.HomeServiceImpl;
 
 @Controller
-public class HomeController extends BaseController {
+public class ProductController extends BaseController {
 	
 	@Autowired
 	HomeServiceImpl _homeService;

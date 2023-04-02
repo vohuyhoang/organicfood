@@ -9,5 +9,5 @@ import organicfood.entity.Categorys;
 public interface CategoryService {
 	
 	@Autowired
-	public boolean saveCategory(Categorys categorys);
+	public boolean saveOrUpdate(Categorys categorys);
 }

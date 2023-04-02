@@ -31,17 +31,16 @@ public class CategoryAdminController extends BaseController {
 	@RequestMapping(value = "/admin/add-category", method = RequestMethod.POST)
 	public String AddCategory(HttpServletRequest request) throws IOException, ServletException {
 
+		request.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
 		String description = request.getParameter("description");
 		
-		System.out.println(name);
-
 		Categorys categorys = new Categorys();
-		categorys.setId(generateKey());
+		categorys.setId(generateCategoryId(name));
 		categorys.setName(name);
 		categorys.setDescription(description);
 
-		if (_categoryService.saveCategory(categorys) == true) {
+		if (_categoryService.saveOrUpdate(categorys) == true) {
 			return "redirect:/admin/";
 		}
 		return "redirect:/admin/";

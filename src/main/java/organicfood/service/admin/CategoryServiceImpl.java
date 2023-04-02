@@ -13,8 +13,8 @@ public class CategoryServiceImpl implements CategoryService{
 	CategorysDAO categorysDAO;
 	
 	@Override
-	public boolean saveCategory(Categorys categorys) {
-		return categorysDAO.saveCategory(categorys);
+	public boolean saveOrUpdate(Categorys categorys) {
+		return categorysDAO.saveOrUpdate(categorys);
 	}
 
 }

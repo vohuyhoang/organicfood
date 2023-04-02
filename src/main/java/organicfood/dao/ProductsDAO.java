@@ -1,5 +1,7 @@
 package organicfood.dao;
 
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 
 import organicfood.dto.ProductsDTO;
@@ -41,5 +43,10 @@ public class ProductsDAO extends BaseDAO {
 			return rowsInserted > 0;
 		}
 	}
-
+	
+	public List<ProductsDTO> GetDataProducts() {
+		String sql = "SELECT id as id_product, category_id as id_category, name, description, price, sale, highlight, new_product, image, created_at, updated_at FROM products";
+		List<ProductsDTO> listProducts = _jdbcTemplate.query(sql, new ProductsDTOMapper());
+		return listProducts;
+	}
 }
