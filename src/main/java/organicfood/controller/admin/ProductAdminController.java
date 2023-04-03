@@ -2,7 +2,6 @@ package organicfood.controller.admin;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import organicfood.controller.BaseController;
 import organicfood.dto.ProductsDTO;
-import organicfood.service.admin.ProductServiceImpl;
+import organicfood.service.admin.ProductAdminServiceImpl;
 
 @Controller
 public class ProductAdminController extends BaseController {
@@ -27,7 +26,7 @@ public class ProductAdminController extends BaseController {
 	}
 
 	@Autowired
-	ProductServiceImpl _productService;
+	ProductAdminServiceImpl _productService;
 
 	@RequestMapping(value = "/admin/product")
 	public ModelAndView Index() {

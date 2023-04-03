@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 
 import org.springframework.web.servlet.ModelAndView;
 
-import organicfood.service.admin.CategoryServiceImpl;
+import organicfood.service.admin.CategoryAdminServiceImpl;
 import organicfood.service.user.HomeServiceImpl;
 
 public class BaseController {

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import organicfood.entity.Categorys;
 
 @Service
-public interface CategoryService {
+public interface CategoryAdminService {
 	
 	@Autowired
 	public boolean saveOrUpdate(Categorys categorys);

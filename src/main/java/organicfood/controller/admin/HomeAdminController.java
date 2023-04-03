@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeAdminController {
+	
 	@RequestMapping(value = "/admin")
 	public ModelAndView Index() {
 		ModelAndView mv = new ModelAndView();

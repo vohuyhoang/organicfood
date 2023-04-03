@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="assets/user/css/plugins.css">
 <link rel="stylesheet" href="assets/user/css/style.css">
 <script src="assets/user/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -33,6 +34,21 @@
 	<script src="assets/user/js/plugins.js"></script>
 	<script src="assets/user/js/ajax-mail.js"></script>
 	<script src="assets/user/js/main.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			const priceElements = document.querySelectorAll(".Show-Price");
+			priceElements.forEach(function(priceElement) {
+				const price = parseFloat(priceElement.textContent);
+				const formattedPrice = price.toLocaleString("vi-VN", {
+					style : "currency",
+					currency : "VND"
+				});
+				priceElement.textContent = formattedPrice;
+			});
+		});
+	</script>
+
 </body>
 
 </html>

@@ -14,10 +14,10 @@ public class ProductController extends BaseController {
 	@Autowired
 	HomeServiceImpl _homeService;
 
-	@RequestMapping(value = { "/", "/home" })
+	@RequestMapping(value = "/product")
 	public ModelAndView Index() {
 		_mvShare.addObject("products", _homeService.GetDataProducts());
-		_mvShare.setViewName("user/index");
+		_mvShare.setViewName("user/product");
 		return _mvShare;
 	}
 

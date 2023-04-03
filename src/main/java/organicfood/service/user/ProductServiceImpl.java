@@ -1,4 +1,4 @@
-package organicfood.service.admin;
+package organicfood.service.user;
 
 import java.util.List;
 
@@ -27,6 +27,12 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public boolean saveOrUpdate(ProductsDTO productsDTO) {
 		return productsDAO.saveOrUpdate(productsDTO);
+	}
+	
+	@Override
+	public List<ProductsDTO> GetDataProducts() {
+		List<ProductsDTO> listProducts = productsDAO.GetDataProducts();
+		return listProducts;
 	}
 
 }

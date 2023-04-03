@@ -7,7 +7,7 @@ import organicfood.dao.CategorysDAO;
 import organicfood.entity.Categorys;
 
 @Service
-public class CategoryServiceImpl implements CategoryService{
+public class CategoryAdminServiceImpl implements CategoryAdminService{
 
 	@Autowired
 	CategorysDAO categorysDAO;

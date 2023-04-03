@@ -13,13 +13,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import organicfood.controller.BaseController;
 import organicfood.entity.Categorys;
-import organicfood.service.admin.CategoryServiceImpl;
+import organicfood.service.admin.CategoryAdminServiceImpl;
 
 @Controller
 public class CategoryAdminController extends BaseController {
 
 	@Autowired
-	CategoryServiceImpl _categoryService;
+	CategoryAdminServiceImpl _categoryService;
 
 	@RequestMapping(value = "/admin/add-category", method = RequestMethod.GET)
 	public ModelAndView ShowAddCategory() {

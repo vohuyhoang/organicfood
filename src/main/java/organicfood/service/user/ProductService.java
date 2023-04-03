@@ -1,4 +1,4 @@
-package organicfood.service.admin;
+package organicfood.service.user;
 
 import java.util.List;
 
@@ -13,6 +13,9 @@ public interface ProductService {
 	
 	@Autowired
 	public List<Categorys> GetDataCategorys();
+	
+	 @Autowired
+	 List<ProductsDTO> GetDataProducts();
 	
 	@Autowired
 	public boolean saveOrUpdate(ProductsDTO productsDTO);
