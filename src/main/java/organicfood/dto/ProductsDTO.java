@@ -7,6 +7,7 @@ public class ProductsDTO {
 	private String id_product;
 	private String name;
 	private Float price;
+	private Float price_old;
 	private String description;
 	private String image;
 	private int sale;
@@ -42,6 +43,14 @@ public class ProductsDTO {
 
 	public void setPrice(Float price) {
 		this.price = price;
+	}
+
+	public Float getPrice_old() {
+		return price_old;
+	}
+
+	public void setPrice_old(Float price_old) {
+		this.price_old = price_old;
 	}
 
 	public String getDescription() {

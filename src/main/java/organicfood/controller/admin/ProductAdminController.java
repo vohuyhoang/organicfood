@@ -51,6 +51,7 @@ public class ProductAdminController extends BaseController {
 		String name = new String(request.getParameter("name").getBytes("ISO-8859-1"), "UTF-8");
 		String description = new String(request.getParameter("description").getBytes("ISO-8859-1"), "UTF-8");
 		float price = Float.parseFloat(request.getParameter("price"));
+		float price_old = Float.parseFloat(request.getParameter("price_old"));
 		String id_category = request.getParameter("id_category");
 		MultipartFile file = multipartRequest.getFile("image");
 		String sale = request.getParameter("sale");
@@ -69,6 +70,7 @@ public class ProductAdminController extends BaseController {
 		productsDTO.setId_product(generateProductId(name));
 		productsDTO.setName(name);
 		productsDTO.setPrice(price);
+		productsDTO.setPrice_old(price_old);
 		productsDTO.setDescription(description);
 		productsDTO.setImage(fileName);
 		productsDTO.setSale(saleFlag);

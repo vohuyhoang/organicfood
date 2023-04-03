@@ -37,14 +37,14 @@
 
 	<script>
 		$(document).ready(function() {
-			const priceElements = document.querySelectorAll(".Show-Price");
-			priceElements.forEach(function(priceElement) {
-				const price = parseFloat(priceElement.textContent);
+			const priceElements = document.querySelectorAll(".show-price");
+			priceElements.forEach(function(element) {
+				const price = parseFloat(element.textContent);
 				const formattedPrice = price.toLocaleString("vi-VN", {
 					style : "currency",
 					currency : "VND"
 				});
-				priceElement.textContent = formattedPrice;
+				element.textContent = formattedPrice;
 			});
 		});
 	</script>

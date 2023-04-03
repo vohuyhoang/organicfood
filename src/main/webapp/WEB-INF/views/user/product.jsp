@@ -104,7 +104,10 @@
 										<div class="product-img">
 											<a href="#"> <img class="default-img"
 												src="assets/img_upload/${ item.image }" alt="">
-											</a> <span class="pink">-0%</span>
+											</a>
+											<c:if test="${item.price_old != null and item.price_old > 0}">
+												<span class="pink">-${ Math.round(((item.price_old - item.price) / item.price_old) * 100) }%</span>
+											</c:if>
 											<div class="product-action">
 												<div class="pro-same-action pro-wishlist">
 													<a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
@@ -130,8 +133,11 @@
 												<i class="fa fa-star-o"></i>
 											</div>
 											<div class="product-price">
-												<span class="Show-Price">${item.price}</span>
-												<span class="old Show-Price">${item.price}</span>
+												<span class="show-price">${item.price}</span>
+												<c:if
+													test="${item.price_old != null and item.price_old > 0}">
+													<span class="old show-price">${item.price_old}</span>
+												</c:if>
 											</div>
 										</div>
 									</div>
