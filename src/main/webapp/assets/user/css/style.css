@@ -39,7 +39,7 @@
 /*  1. Template default CSS
 /*----------------------------------------*/
 /*-- Google Font --*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
 /*-- Common Style --*/
 *,
@@ -57,32 +57,38 @@ body {
 body {
   background-color: #ffffff;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #000;
 }
 
-h1,
+h1 {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: #000000;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   margin-top: 0;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #333;
   margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
@@ -106,7 +112,7 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 18px;
 }
 
@@ -1453,7 +1459,7 @@ input {
   -webkit-box-shadow: none;
   box-shadow: none;
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
   width: 100%;
 }
@@ -1464,7 +1470,7 @@ select {
   border: 0px solid #eceff8;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -1472,7 +1478,7 @@ option {
   background: #fff;
   border: 0px solid #626262;
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 input:focus {
@@ -1485,7 +1491,7 @@ textarea {
   border: 2px solid #eceff8;
   padding: 10px;
   width: 100%;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 textarea:focus {
@@ -1794,7 +1800,7 @@ textarea:focus {
 @media only screen and (max-width: 767px) {
   #scrollUp i {
     line-height: 40px;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -1817,11 +1823,18 @@ textarea:focus {
     - Background Color
 ------------------------------------------*/
 .bg-purple {
-  background-color: #f0e0ff;
+  background: #3CA55C;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #B5AC49, #3CA55C);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #B5AC49, #3CA55C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .bg-gray {
   background-color: #f6f6f8;
+  font-size: 14px;
 }
 
 .bg-gray-2 {
@@ -1899,7 +1912,7 @@ textarea:focus {
 }
 
 a.default-btn {
-  font-size: 16px;
+  font-size: 18px;
   color: #010101;
   display: inline-block;
   border: 1px solid #333;
@@ -2182,8 +2195,8 @@ a.default-btn {
   color: #242424;
   margin: 0 0 10px;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .main-menu nav ul li ul.mega-menu>li ul li.mega-menu-title a::before {
@@ -2274,7 +2287,7 @@ a.default-btn {
 .main-menu nav ul li>a {
   font-size: 15px;
   color: #555252;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: .8px;
   display: inline-block;
   line-height: 94px;
@@ -2643,7 +2656,7 @@ a.default-btn {
 }
 
 .header-right-wrap .same-style.cart-wrap .shopping-cart-content ul li .shopping-cart-title span {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .header-right-wrap .same-style.cart-wrap .shopping-cart-content ul li .shopping-cart-delete {
@@ -2659,7 +2672,7 @@ a.default-btn {
 }
 
 .header-right-wrap .same-style.cart-wrap .shopping-cart-content ul li .shopping-cart-delete a {
-  font-size: 16px;
+  font-size: 18px;
   color: #a749ff;
 }
 
@@ -2668,7 +2681,7 @@ a.default-btn {
 }
 
 .header-right-wrap .same-style.cart-wrap .shopping-cart-content .shopping-cart-total h4 {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 17px;
 }
 
@@ -2683,8 +2696,8 @@ a.default-btn {
 .header-right-wrap .same-style.cart-wrap .shopping-cart-content .shopping-cart-btn a {
   margin-bottom: 20px;
   padding: 16px 40px 17px;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 18px;
   display: block;
 }
 
@@ -2757,6 +2770,7 @@ a.default-btn {
   transition: all 0.4s ease 0s;
   width: 100%;
   color: #000;
+  font-size: 14px;
   background: transparent;
 }
 
@@ -2984,7 +2998,7 @@ a.default-btn {
 }
 
 .language-currency-wrap .same-language-currency a i {
-  font-size: 16px;
+  font-size: 18px;
   color: #555252;
   position: relative;
   top: 2px;
@@ -3438,8 +3452,8 @@ a.default-btn {
   color: #242424;
   margin: 0 0 10px;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .sidebar-menu nav ul li ul.mega-menu>li ul li.mega-menu-title a::before {
@@ -3512,7 +3526,7 @@ a.default-btn {
 .sidebar-menu nav ul li a {
   color: #000000;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: .8px;
   text-transform: capitalize;
   display: block;
@@ -3520,19 +3534,19 @@ a.default-btn {
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .sidebar-menu nav ul li a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sidebar-menu nav ul li a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sidebar-menu nav ul li a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -3705,7 +3719,7 @@ a.default-btn {
 
 .clickable-mainmenu .clickable-menu-style ul li a {
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
   padding: 0 0 20px;
 }
@@ -4161,14 +4175,14 @@ a.default-btn {
 
 .single-slider .slider-content h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
 }
 
 .single-slider .slider-content h1 {
   line-height: 97px;
   font-size: 72px;
-  color: #010101;
+  color: #fffefe;
   margin: 6px 0 37px;
 }
 
@@ -4203,10 +4217,10 @@ a.default-btn {
 }
 
 .single-slider .slider-content .slider-btn a {
-  font-size: 16px;
-  color: #010101;
+  font-size: 18px;
+  color: #fffefe;
   display: inline-block;
-  border: 1px solid #333;
+  border: 1px solid #fff;
   text-transform: uppercase;
   line-height: 1;
   padding: 19px 50px 21px;
@@ -4502,7 +4516,7 @@ a.default-btn {
 .slider-content-2 h3 {
   color: #000000;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   margin-left: 135px;
   margin-bottom: 0;
@@ -4554,7 +4568,7 @@ a.default-btn {
 }
 
 .slider-content-2 .slider-btn a {
-  font-size: 16px;
+  font-size: 18px;
   color: #010101;
   display: inline-block;
   border: 1px solid #333;
@@ -4624,7 +4638,7 @@ a.default-btn {
 
 .slider-content-3 h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   position: relative;
   display: inline-block;
@@ -4685,7 +4699,7 @@ a.default-btn {
 }
 
 .slider-content-3 .slider-btn a {
-  font-size: 16px;
+  font-size: 18px;
   color: #010101;
   display: inline-block;
   border: 1px solid #333;
@@ -4928,7 +4942,7 @@ a.default-btn {
 }
 
 .slider-content-5 h3 {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: .5px;
   font-size: 30px;
   margin: 0;
@@ -4936,7 +4950,7 @@ a.default-btn {
 }
 
 .slider-content-5 h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 72px;
   margin: 27px 0 22px;
   letter-spacing: .5px;
@@ -4966,7 +4980,7 @@ a.default-btn {
 }
 
 .slider-btn-5 a {
-  font-size: 16px;
+  font-size: 18px;
   color: #010101;
   background-color: #fff;
   display: inline-block;
@@ -5086,7 +5100,7 @@ a.default-btn {
 }
 
 .slider-content-6 h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 60px;
   letter-spacing: 8px;
   color: #fff;
@@ -5295,8 +5309,8 @@ a.default-btn {
 }
 
 .slider-content-7 h3 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: #313131;
   margin: 0;
   letter-spacing: .3px;
@@ -5305,7 +5319,7 @@ a.default-btn {
 
 .slider-content-7 h1 {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 600;
   color: #313131;
   margin: 17px 0 37px;
   line-height: 65px;
@@ -5336,7 +5350,7 @@ a.default-btn {
 }
 
 .slider-content-7 .slider-btn-9 a {
-  font-size: 16px;
+  font-size: 18px;
   color: #010101;
   display: inline-block;
   border: 1px solid #333;
@@ -5578,7 +5592,7 @@ a.default-btn {
 }
 
 .support-wrap-2 .support-content-2 p {
-  font-size: 14px;
+  font-size: 18px;
   color: #6a6a6a;
   margin: 0 auto;
   width: 80%;
@@ -5712,7 +5726,7 @@ a.default-btn {
 }
 
 .section-title-3 h4 {
-  font-weight: 500;
+  font-weight: 600;
   color: #000000;
   font-size: 24px;
 }
@@ -5749,7 +5763,7 @@ a.default-btn {
 }
 
 .product-tab-list a h4 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #555;
   margin: 0;
@@ -5789,7 +5803,7 @@ a.default-btn {
   line-height: 1;
   padding: 3px 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .product-wrap .product-img span.pink {
@@ -5865,7 +5879,7 @@ a.default-btn {
 }
 
 .product-wrap .product-img .product-action .pro-cart {
-  font-size: 14px;
+  font-size: 18px;
   width: calc(100% - 48px - 48px);
   -webkit-transition-delay: .1s;
   -o-transition-delay: .1s;
@@ -5883,7 +5897,7 @@ a.default-btn {
 
 .product-wrap .product-img .product-action .pro-same-action a {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   height: 48px;
   line-height: 48px;
   display: block;
@@ -5902,7 +5916,7 @@ a.default-btn {
 }
 
 .product-wrap .product-content h3 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -5923,7 +5937,7 @@ a.default-btn {
 .product-wrap .product-content .product-price span {
   font-size: 15px;
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 9px;
   position: relative;
 }
@@ -6162,7 +6176,7 @@ a.default-btn {
 
 .product-details-content .pro-details-size-color .pro-details-color-wrap span {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 15px;
   font-size: 15px;
 }
@@ -6212,7 +6226,7 @@ a.default-btn {
 
 .product-details-content .pro-details-size-color .pro-details-size span {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 10px;
   font-size: 15px;
 }
@@ -6263,8 +6277,8 @@ a.default-btn {
   color: #8f8f8f;
   cursor: pointer;
   float: inherit;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 20px;
   margin: 0;
   position: absolute;
@@ -6294,7 +6308,7 @@ a.default-btn {
   border: medium none;
   color: #8f8f8f;
   float: left;
-  font-size: 14px;
+  font-size: 18px;
   height: 60px;
   margin: 0;
   padding: 0;
@@ -6395,7 +6409,7 @@ a.default-btn {
 
 @media only screen and (max-width: 767px) {
   .product-details-content .pro-details-meta ul li a {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -6422,7 +6436,7 @@ a.default-btn {
 }
 
 .product-details-content .pro-details-social ul li a {
-  font-size: 16px;
+  font-size: 18px;
   color: #343538;
 }
 
@@ -6602,7 +6616,7 @@ a.default-btn {
 .product-tab-list-2 a h4 {
   color: #555;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   border-bottom: 2px solid transparent;
   padding-bottom: 5px;
@@ -6625,7 +6639,7 @@ a.default-btn {
 }
 
 .filter-active a {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #010101;
 }
@@ -6635,7 +6649,7 @@ a.default-btn {
 }
 
 .filter-active a i {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .product-filter-wrapper {
@@ -6661,8 +6675,8 @@ a.default-btn {
 
 .product-filter-wrapper .product-filter h5 {
   color: #000;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom: 25px;
   padding-bottom: 7px;
   position: relative;
@@ -6719,8 +6733,8 @@ a.default-btn {
   background: transparent;
   padding: 0;
   border: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .price-filter #slider-range {
@@ -6787,8 +6801,8 @@ a.default-btn {
 }
 
 .product-wrap-2 .product-img span {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -6844,7 +6858,7 @@ a.default-btn {
   width: 42px;
   height: 42px;
   line-height: 42px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #a749ff;
   color: #fff;
   text-align: center;
@@ -6878,7 +6892,7 @@ a.default-btn {
 }
 
 .product-wrap-2 .product-content-2 .title-price-wrap-2 h3 a {
-  font-size: 16px;
+  font-size: 18px;
   color: #000000;
 }
 
@@ -6913,7 +6927,7 @@ a.default-btn {
 }
 
 .product-wrap-2 .product-content-2 .pro-wishlist-2 a {
-  font-size: 16px;
+  font-size: 18px;
   color: #929292;
   margin: 4px 0 0 10px;
   display: inline-block;
@@ -7050,7 +7064,7 @@ a.default-btn {
 
 .view-more a {
   color: #555;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   border-bottom: 1px solid #cccccc;
   line-height: 1;
@@ -7128,7 +7142,7 @@ a.default-btn {
   line-height: 1;
   padding: 3px 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 99;
 }
 
@@ -7185,9 +7199,9 @@ a.default-btn {
 }
 
 .product-wrap-3 .product-content-3-wrap .product-content-3 .price-3 span {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 9px;
   position: relative;
 }
@@ -7217,7 +7231,7 @@ a.default-btn {
   width: 42px;
   height: 42px;
   line-height: 42px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #a749ff;
   color: #fff;
   text-align: center;
@@ -7539,7 +7553,7 @@ a.default-btn {
 }
 
 .collection-product .collection-content span {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .collection-product .collection-content h4 {
@@ -7548,9 +7562,9 @@ a.default-btn {
 }
 
 .collection-product .collection-content h4 a {
-  font-size: 16px;
+  font-size: 18px;
   color: #000000;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .collection-product .collection-content h4 a:hover {
@@ -7585,7 +7599,7 @@ a.default-btn {
   line-height: 1;
   padding: 3px 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .product-wrap-5 .product-img span.purple {
@@ -7630,7 +7644,7 @@ a.default-btn {
   width: 35px;
   height: 35px;
   line-height: 36px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -7648,7 +7662,7 @@ a.default-btn {
 }
 
 .product-wrap-5 .product-content-5 h3 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 5px;
   line-height: 17px;
 }
@@ -7741,13 +7755,13 @@ a.default-btn {
 }
 
 .collection-product-2 .collection-content-2 span {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .collection-product-2 .collection-content-2 h4 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   margin: 5px 0 0;
   line-height: 21px;
 }
@@ -7923,7 +7937,7 @@ a.default-btn {
   line-height: 1;
   color: #fff;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 2px 10px 5px;
 }
 
@@ -7970,7 +7984,7 @@ a.default-btn {
 
 .blog-wrap .blog-content-wrap .blog-content h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 30px;
   margin: 0 0 5px;
 }
@@ -8079,7 +8093,7 @@ a.default-btn {
 .blog-wrap-2 .blog-content-2 .blog-meta-2 ul li {
   color: #333;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1px;
   list-style: outside none none;
   margin: 0 17px 0 0;
@@ -8116,7 +8130,7 @@ a.default-btn {
 
 .blog-wrap-2 .blog-content-2 h4 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 10px 0 20px;
   color: #333;
 }
@@ -8173,7 +8187,7 @@ a.default-btn {
   color: #333;
   display: inline-block;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.2px;
   margin-top: 4px;
   text-transform: capitalize;
@@ -8217,7 +8231,7 @@ a.default-btn {
   border-radius: 50px;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   height: 30px;
   line-height: 28px;
   text-align: center;
@@ -8423,6 +8437,7 @@ a.default-btn {
 .copyright p {
   color: #313131;
   letter-spacing: .9px;
+  font-size: 14px;
 }
 
 .copyright p a {
@@ -8435,7 +8450,7 @@ a.default-btn {
 
 .footer-widget .footer-title h3 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #313131;
   margin: 0 0 16px;
   line-height: 1;
@@ -8480,7 +8495,7 @@ a.default-btn {
   width: auto;
   height: auto;
   color: #313131;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 0 1px;
   line-height: 1;
   border-bottom: 2px solid #9b9b9c;
@@ -8727,7 +8742,7 @@ a.default-btn {
 
 .footer-top .footer-social ul li a {
   color: #e5e5e5;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .footer-top .footer-social ul li a:hover {
@@ -8903,7 +8918,7 @@ a.default-btn {
   border-radius: 100%;
   border: 2px solid #97584a;
   color: #97584a;
-  font-size: 14px;
+  font-size: 18px;
   display: inline-block;
   text-align: center;
 }
@@ -9046,7 +9061,7 @@ a.default-btn {
 .single-banner-2 .banner-content-2 h4 {
   font-size: 24px;
   color: #010101;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Cormorant Garamond';
   margin: 22px 0 94px;
 }
@@ -9079,7 +9094,7 @@ a.default-btn {
   border-radius: 100%;
   border: 2px solid #97584a;
   color: #97584a;
-  font-size: 14px;
+  font-size: 18px;
   display: inline-block;
   text-align: center;
 }
@@ -9116,7 +9131,7 @@ a.default-btn {
 }
 
 .subscribe-style-2 p {
-  font-size: 16px;
+  font-size: 18px;
   color: #696969;
   margin: 0 0 23px;
 }
@@ -9126,7 +9141,7 @@ a.default-btn {
   border: none;
   height: 45px;
   padding: 2px 50px 2px 0;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
   border-bottom: 2px solid #e2e2e2;
 }
@@ -9176,7 +9191,7 @@ a.default-btn {
 }
 
 .subscribe-style-3 p {
-  font-size: 16px;
+  font-size: 18px;
   color: #696969;
   margin: 0;
   line-height: 1;
@@ -9205,7 +9220,7 @@ a.default-btn {
   color: #fff;
   background-color: #070508;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 17px 55px;
@@ -9218,8 +9233,8 @@ a.default-btn {
 
 /*------- 11. About style ------ */
 .welcome-content h5 {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   color: #666;
   margin: 0;
   letter-spacing: .3px;
@@ -9227,7 +9242,7 @@ a.default-btn {
 
 .welcome-content h1 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: .3px;
   margin: 8px 0 30px;
   color: #433f3f;
@@ -9250,7 +9265,7 @@ a.default-btn {
 }
 
 .welcome-content p {
-  font-size: 16px;
+  font-size: 18px;
   color: #4b4b4b;
   line-height: 30px;
   width: 66%;
@@ -9320,7 +9335,7 @@ a.default-btn {
   color: #333;
   font-size: 20px;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .team-wrapper {
@@ -9358,7 +9373,7 @@ a.default-btn {
   border-radius: 50px;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   height: 30px;
   line-height: 28px;
   text-align: center;
@@ -9402,7 +9417,7 @@ a.default-btn {
 
 .team-wrapper .team-content h4 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 3px;
   text-transform: capitalize;
 }
@@ -9419,7 +9434,7 @@ a.default-btn {
 
 .single-mission h3 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 20px;
   text-transform: capitalize;
   line-height: 22px;
@@ -9467,8 +9482,8 @@ a.default-btn {
 .single-testimonial p {
   line-height: 32px;
   color: #575757;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   margin: 32px 0 0px;
   font-style: italic;
 }
@@ -9489,7 +9504,7 @@ a.default-btn {
 }
 
 .single-testimonial .client-info h5 {
-  font-size: 14px;
+  font-size: 18px;
   color: #010101;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -9497,7 +9512,7 @@ a.default-btn {
 }
 
 .single-testimonial .client-info span {
-  font-size: 14px;
+  font-size: 18px;
   color: #010101;
   letter-spacing: 1.5px;
 }
@@ -9687,7 +9702,7 @@ a.default-btn {
 
 .funfact-content .timer span p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #555;
   text-transform: uppercase;
   margin: 34px 0 0;
@@ -9702,7 +9717,7 @@ a.default-btn {
 @media only screen and (max-width: 767px) {
   .funfact-content .timer span p {
     margin: 12px 0 0;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -9734,7 +9749,7 @@ a.default-btn {
 .breadcrumb-content ul li {
   display: inline-block;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: #5b5858;
   margin-right: 18px;
   text-transform: uppercase;
@@ -9821,8 +9836,8 @@ a.default-btn {
 }
 
 .sidebar-widget h4.pro-sidebar-title {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: #333;
   margin: 0;
 }
@@ -9900,7 +9915,7 @@ a.default-btn {
 
 .sidebar-widget .sidebar-widget-list ul li a span {
   color: #9a9a9a;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #eeeeee;
   width: 30px;
   height: 20px;
@@ -9958,7 +9973,7 @@ a.default-btn {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #e6e6e6;
   color: #000;
-  font-size: 14px;
+  font-size: 18px;
   height: 43px;
   padding: 2px 55px 2px 18px;
 }
@@ -10036,7 +10051,7 @@ a.default-btn {
 }
 
 .single-sidebar-blog .sidebar-blog-content h4 {
-  font-size: 14px;
+  font-size: 18px;
   margin: 5px 0 0;
 }
 
@@ -10092,7 +10107,7 @@ a.default-btn {
 }
 
 .shop-top-bar .select-shoing-wrap .shop-select select {
-  font-size: 14px;
+  font-size: 18px;
   color: #606060;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -10265,9 +10280,9 @@ a.default-btn {
 }
 
 .shop-list-wrap .shop-list-content .shop-list-btn a {
-  font-size: 14px;
+  font-size: 18px;
   color: #343538;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
   line-height: 1;
@@ -10314,7 +10329,7 @@ a.default-btn {
   height: 43px;
   text-align: center;
   line-height: 43px;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 100%;
   color: #a749ff;
   -webkit-box-shadow: 0 0px 12px 0.8px rgba(0, 0, 0, 0.1);
@@ -10439,7 +10454,7 @@ a.default-btn {
   line-height: 1;
   padding: 3px 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #fa6bff;
 }
 
@@ -10537,7 +10552,7 @@ a.default-btn {
   background-color: transparent;
   border-bottom: 3px solid transparent;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   margin: 0 15px 0;
   padding: 0px 0px 13px;
@@ -10593,7 +10608,7 @@ a.default-btn {
 
 .description-review-bottom .product-anotherinfo-wrapper ul li {
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   list-style: outside none none;
   margin: 0 0 13px;
 }
@@ -10601,7 +10616,7 @@ a.default-btn {
 .description-review-bottom .product-anotherinfo-wrapper ul li span {
   color: #000;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 26px 0 0;
   min-width: 85px;
 }
@@ -10670,10 +10685,10 @@ a.default-btn {
 }
 
 .single-review .review-top-wrap .review-left .review-name h4 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .single-review .review-top-wrap .review-left .review-rating {
@@ -10687,7 +10702,7 @@ a.default-btn {
 }
 
 .single-review .review-top-wrap .review-btn a {
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -10723,8 +10738,8 @@ a.default-btn {
 
 .ratting-form-wrapper h3 {
   margin: 0;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -10762,7 +10777,7 @@ a.default-btn {
 .ratting-form-wrapper .ratting-form form .form-submit input {
   width: auto;
   padding: 12px 50px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   height: auto;
   background-color: #a749ff;
@@ -10878,7 +10893,7 @@ a.default-btn {
   line-height: 1;
   padding: 3px 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #fa6bff;
   z-index: 99;
 }
@@ -10927,7 +10942,7 @@ a.default-btn {
   line-height: 1;
   padding: 3px 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #fa6bff;
   z-index: 99;
 }
@@ -10973,7 +10988,7 @@ a.default-btn {
 .pro-details-affiliate a {
   color: #fff;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #000;
   line-height: 1;
   padding: 13px 30px 16px;
@@ -11011,7 +11026,7 @@ a.default-btn {
 
 h3.cart-page-title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 15px;
 }
 
@@ -11027,8 +11042,8 @@ h3.cart-page-title {
 .cart-table-content table thead>tr th {
   border-top: medium none;
   color: #333;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   padding: 21px 45px 22px;
   text-align: center;
   text-transform: uppercase;
@@ -11063,7 +11078,7 @@ h3.cart-page-title {
 .cart-table-content table tbody>tr td.product-name a {
   color: #333;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .cart-table-content table tbody>tr td.product-name a:hover {
@@ -11075,12 +11090,12 @@ h3.cart-page-title {
 }
 
 .cart-table-content table tbody>tr td.product-price-cart span {
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
 }
 
 .cart-table-content table tbody>tr td.product-subtotal {
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
 }
 
@@ -11100,7 +11115,7 @@ h3.cart-page-title {
   color: #333;
   cursor: pointer;
   float: inherit;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   position: absolute;
   -webkit-transition: all 0.3s ease 0s;
@@ -11129,7 +11144,7 @@ h3.cart-page-title {
 .cart-table-content table tbody>tr td.product-quantity .cart-plus-minus input.cart-plus-minus-box {
   color: #333;
   float: left;
-  font-size: 14px;
+  font-size: 18px;
   height: 40px;
   margin: 0;
   width: 110px;
@@ -11158,7 +11173,7 @@ h3.cart-page-title {
   border-radius: 50px;
   color: #fff;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   padding: 7px 12px;
   text-transform: uppercase;
@@ -11199,8 +11214,8 @@ h3.cart-page-title {
   border-radius: 50px;
   color: #363f4d;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1;
   padding: 18px 63px 17px;
   text-transform: uppercase;
@@ -11296,7 +11311,7 @@ h3.cart-page-title {
 .discount-code-wrapper .title-wrap h4.cart-bottom-title {
   display: inline-block;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   padding-right: 18px;
 }
@@ -11305,7 +11320,7 @@ h3.cart-page-title {
 
   .cart-tax .title-wrap h4.cart-bottom-title,
   .discount-code-wrapper .title-wrap h4.cart-bottom-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -11339,7 +11354,7 @@ h3.cart-page-title {
 .cart-tax .tax-wrapper .tax-select-wrapper .tax-select label,
 .discount-code-wrapper .tax-wrapper .tax-select-wrapper .tax-select label {
   color: #242424;
-  font-size: 14px;
+  font-size: 18px;
   margin: 0 0 5px;
 }
 
@@ -11373,8 +11388,8 @@ h3.cart-page-title {
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   padding: 13px 42px 12px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -11413,8 +11428,8 @@ h3.cart-page-title {
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   padding: 13px 42px 12px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -11467,7 +11482,7 @@ h3.cart-page-title {
 .grand-totall .title-wrap h4.cart-bottom-title {
   display: inline-block;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   padding-right: 18px;
 }
@@ -11479,14 +11494,14 @@ h3.cart-page-title {
 }
 
 .grand-totall h5 {
-  font-size: 14px;
+  font-size: 18px;
   margin: 36px 0 27px;
 }
 
 .grand-totall h5 span {
   float: right;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .grand-totall .total-shipping {
@@ -11497,7 +11512,7 @@ h3.cart-page-title {
 }
 
 .grand-totall .total-shipping h5 {
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -11536,7 +11551,7 @@ h3.cart-page-title {
 .grand-totall h4.grand-totall-title {
   color: #a749ff;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 25px;
 }
 
@@ -11549,8 +11564,8 @@ h3.cart-page-title {
   border-radius: 50px;
   color: #fff;
   display: block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1;
   padding: 18px 10px 17px;
   text-align: center;
@@ -11572,7 +11587,7 @@ h3.cart-page-title {
   font-size: 20px;
   color: #000;
   margin: 0 0 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .billing-info-wrap .billing-info label,
@@ -11586,7 +11601,7 @@ h3.cart-page-title {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #e6e6e6;
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   padding-left: 20px;
   padding-right: 10px;
 }
@@ -11601,7 +11616,7 @@ h3.cart-page-title {
   -webkit-appearance: none;
   border: 1px solid #e6e6e6;
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   height: 45px;
   padding: 2px 20px;
   background: rgba(0, 0, 0, 0) url("../../assets/img/icon-img/select.png") no-repeat scroll right 18px center;
@@ -11635,7 +11650,7 @@ h3.cart-page-title {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #e6e6e6;
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   padding-left: 20px;
   padding-right: 10px;
   margin: 0 0 20px;
@@ -11646,7 +11661,7 @@ h3.cart-page-title {
   border: medium none;
   color: #fff;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px 30px;
   text-transform: uppercase;
   border-radius: 50px;
@@ -11658,13 +11673,13 @@ h3.cart-page-title {
 }
 
 .billing-info-wrap .additional-info-wrap h4 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .billing-info-wrap .additional-info-wrap .additional-info label {
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   margin: 0 0 7px;
 }
 
@@ -11672,7 +11687,7 @@ h3.cart-page-title {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #e6e6e6;
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   height: 138px;
   padding: 17px 20px;
 }
@@ -11695,7 +11710,7 @@ h3.cart-page-title {
 
 .your-order-area h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 20px;
   color: #000;
 }
@@ -11727,8 +11742,8 @@ h3.cart-page-title {
 }
 
 .your-order-area .your-order-wrap .your-order-product-info .your-order-top ul li {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   list-style: outside none none;
 }
 
@@ -11762,13 +11777,13 @@ h3.cart-page-title {
 }
 
 .your-order-area .your-order-wrap .your-order-product-info .your-order-bottom ul li {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   list-style: none;
 }
 
 .your-order-area .your-order-wrap .your-order-product-info .your-order-bottom ul li.your-order-shipping {
-  font-size: 16px;
+  font-size: 18px;
   color: #212121;
   font-weight: 400;
 }
@@ -11793,15 +11808,15 @@ h3.cart-page-title {
 }
 
 .your-order-area .your-order-wrap .your-order-product-info .your-order-total ul li.order-total {
-  font-weight: 500;
+  font-weight: 600;
   color: #212121;
   font-size: 18px;
 }
 
 .your-order-area .your-order-wrap .your-order-product-info .your-order-total ul li {
-  font-weight: 500;
+  font-weight: 600;
   color: #a749ff;
-  font-size: 16px;
+  font-size: 18px;
   list-style: outside none none;
 }
 
@@ -11815,7 +11830,7 @@ h3.cart-page-title {
 
 .your-order-area .payment-accordion h4 {
   color: #212121;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -11835,7 +11850,7 @@ h3.cart-page-title {
 
 .your-order-area .payment-accordion .panel-body p {
   padding: 0 0 0 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -11843,7 +11858,7 @@ h3.cart-page-title {
   background-color: #a749ff;
   color: #fff;
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 1;
   padding: 18px 20px;
@@ -11956,7 +11971,7 @@ h3.cart-page-title {
 }
 
 .contact-social h3 {
-  font-weight: 500;
+  font-weight: 600;
   color: #4d4d4d;
   font-size: 24px;
   margin: 0 0 17px;
@@ -11969,7 +11984,7 @@ h3.cart-page-title {
 }
 
 .contact-social ul li a {
-  font-size: 16px;
+  font-size: 18px;
   color: #4d4d4d;
 }
 
@@ -12002,7 +12017,7 @@ h3.cart-page-title {
 
 .contact-form .contact-title h2 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   color: #464646;
   line-height: 1;
   margin-bottom: 36px;
@@ -12028,8 +12043,8 @@ h3.cart-page-title {
   border: none;
   background-color: #404040;
   color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
   padding: 15px 52px;
@@ -12107,7 +12122,7 @@ h3.cart-page-title {
 .blog-details-top .blog-details-content .blog-meta-2 ul li {
   color: #333;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1px;
   list-style: outside none none;
   margin: 0 17px 0 0;
@@ -12144,7 +12159,7 @@ h3.cart-page-title {
 
 .blog-details-top .blog-details-content h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 8px 0 20px;
 }
 
@@ -12176,7 +12191,7 @@ h3.cart-page-title {
   font-size: 18px;
   margin: 25px 0 26px;
   line-height: 34px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -12194,7 +12209,7 @@ h3.cart-page-title {
 
 @media only screen and (max-width: 767px) {
   .blog-details-top .blog-details-content blockquote {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -12286,7 +12301,7 @@ h3.cart-page-title {
 }
 
 .tag-share .blog-share ul li a {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .next-previous-post {
@@ -12370,8 +12385,8 @@ h3.cart-page-title {
 }
 
 .blog-comment-wrapper .single-comment-wrapper .blog-comment-content h4 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   margin: 0;
   line-height: 1;
 }
@@ -12383,13 +12398,13 @@ h3.cart-page-title {
 }
 
 .blog-comment-wrapper .single-comment-wrapper .blog-comment-content p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .blog-comment-wrapper .single-comment-wrapper .blog-comment-content .blog-details-btn a {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -12457,7 +12472,7 @@ h3.cart-page-title {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   height: inherit;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -12545,7 +12560,7 @@ h3.cart-page-title {
   background-color: transparent;
   border: 1px solid #ebebeb;
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   height: 45px;
   margin-bottom: 30px;
   padding: 0 15px;
@@ -12571,7 +12586,7 @@ h3.cart-page-title {
 
 @media only screen and (max-width: 767px) {
   .login-register-wrapper .login-form-container .login-register-form form .button-box .login-toggle-btn label {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -12586,7 +12601,7 @@ h3.cart-page-title {
 
 @media only screen and (max-width: 767px) {
   .login-register-wrapper .login-form-container .login-register-form form .button-box .login-toggle-btn a {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -12599,8 +12614,8 @@ h3.cart-page-title {
   border: medium none;
   color: #333;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1;
   padding: 11px 30px;
   text-transform: uppercase;
@@ -12631,7 +12646,7 @@ h3.cart-page-title {
   border-bottom: 1px solid #ebebeb;
   color: #000;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   position: relative;
   text-transform: uppercase;
@@ -12640,7 +12655,7 @@ h3.cart-page-title {
 @media only screen and (max-width: 767px) {
   .single-my-account h3.panel-title {
     line-height: 22px;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -12674,7 +12689,7 @@ h3.cart-page-title {
   content: "\f107";
   display: inline-block;
   font-family: "FontAwesome";
-  font-size: 16px;
+  font-size: 18px;
   position: absolute;
   right: 10px;
   top: 19px;
@@ -12702,7 +12717,7 @@ h3.cart-page-title {
 }
 
 .single-my-account .myaccount-info-wrapper .account-info-wrapper h5 {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.2px;
   margin-top: 7px;
 }
@@ -12713,7 +12728,7 @@ h3.cart-page-title {
 
 .single-my-account .myaccount-info-wrapper .billing-info label {
   color: #000;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 
@@ -12741,8 +12756,8 @@ h3.cart-page-title {
 .single-my-account .myaccount-info-wrapper .billing-back-btn .billing-back a {
   color: #000;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -12751,7 +12766,7 @@ h3.cart-page-title {
 }
 
 .single-my-account .myaccount-info-wrapper .billing-back-btn .billing-back a i {
-  font-size: 16px;
+  font-size: 18px;
   color: #a749ff;
 }
 
@@ -12760,8 +12775,8 @@ h3.cart-page-title {
   border: medium none;
   color: #000;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1;
   padding: 16px 35px 17px;
   text-transform: uppercase;
@@ -12826,7 +12841,7 @@ h3.cart-page-title {
   margin: 0 2px;
   padding: 12px 15px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .single-my-account .myaccount-info-wrapper .entries-wrapper .entries-edit-delete a:hover {

@@ -12,19 +12,19 @@
 					<div class="row">
 						<div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-6">
 							<div class="slider-content slider-animated-1">
-								<h3 class="animated">Smart Products</h3>
+								<h3 class="animated" style="color: #f7b733; font-weight: 800;">Sản phẩm mới</h3>
 								<h1 class="animated">
-									Summer Offer <br>2019 Collection
+									Dinh dưỡng <br>hữu cơ tổng hợp
 								</h1>
 								<div class="slider-btn btn-hover">
-									<a class="animated" href="shop.html">SHOP NOW</a>
+									<a class="animated" href="shop.html">Mua ngay</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-6">
 							<div class="slider-single-img slider-animated-1">
 								<img class="animated"
-									src="assets/user/img/slider/single-slide-1.png" alt="">
+									src="assets/user/img/slider/single-slide-1.png" alt="" style="width: 80%;">
 							</div>
 						</div>
 					</div>
@@ -35,19 +35,19 @@
 					<div class="row">
 						<div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-6">
 							<div class="slider-content slider-animated-1">
-								<h3 class="animated">Smart Products</h3>
-								<h1 class="animated">
-									Summer Offer <br>2019 Collection
+								<h3 class="animated" style="color: #f7b733; font-weight: 800;">Sản phẩm nổi bật</h3>
+								<h1 class="animated" style="font-size: 65px;">
+									Dinh dưỡng <br>từ hạt hướng dương
 								</h1>
 								<div class="slider-btn btn-hover">
-									<a class="animated" href="shop.html">SHOP NOW</a>
+									<a class="animated" href="shop.html">Mua ngay</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-6">
 							<div class="slider-single-img slider-animated-1">
 								<img class="animated"
-									src="assets/user/img/slider/single-slide-1.png" alt="">
+									src="assets/user/img/slider/single-slide-2.png" alt="" style="width: 90%;">
 							</div>
 						</div>
 					</div>
